@@ -1,6 +1,6 @@
 import { Seller } from "./seller"
 
-export type Sale= {
+export type Sales= {
     id: number;
     visited: number;
     deals: number;
@@ -10,7 +10,7 @@ export type Sale= {
 }
 
 export type SalePage = {
-    content?: Sale[];
+    content?: Sales[];
 
     last: boolean;
     totalElements: number;
