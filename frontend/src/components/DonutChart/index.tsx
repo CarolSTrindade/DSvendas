@@ -6,7 +6,7 @@ import { BASE_URL } from 'utils/requests';
 
 type ChartData = {
     labels: string[];
-    series: Number[];
+    series: number[];
 }
 
 function DonutChart() {
@@ -20,10 +20,7 @@ function DonutChart() {
             const myLabels = data.map(x => x.sellerName);
             const mySeries = data.map(x => x.sum);
 
-            setChartData({
-                labels: myLabels,
-                series: mySeries
-            });
+            setChartData({ labels: myLabels, series: mySeries});
         });
     },   []);
 
