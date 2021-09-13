@@ -1,14 +1,12 @@
 import axios from "axios";
 import Pagination from "components/Pagination";
-
 import { useEffect, useState } from "react";
 import { SalePage } from "types/sale";
-import { formatLocalDate } from "utils/format";
 import { BASE_URL } from "utils/requests";
 
 function DataTable() {
-
-    const [activePage, setActivePage] = useState(0);
+    
+    const[activePage, setActivePage] = useState(0);
     const [page, setPage] = useState<SalePage>({
         first: true,
         last: true,
@@ -61,4 +59,6 @@ function DataTable() {
 
 export default DataTable;
 
-
+function formatLocalDate(date: string, arg1: string): import("react").ReactNode {
+    throw new Error("Function not implemented.");
+}
